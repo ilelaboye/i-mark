@@ -76,28 +76,18 @@
 <style>
 .page-wrapper {
   background-color: #fff;
-  height: 90vh;
   width: 100%;
+  height: 100vh;
   text-align: center;
   margin: 20px;
 }
 .page-wrapper .row {
   height: 100%;
 }
-@media only screen and (max-width: 992px) {
+
+@media only screen and (max-width: 768px) {
   .page-wrapper .display-side .display-img {
     display: none;
-  }
-}
-@media only screen and (max-width: 800px) {
-  .page-wrapper .display-side .display-img {
-    display: none !important;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .page-wrapper .display-side {
-    display: none !important;
   }
 }
 
@@ -107,36 +97,31 @@
   border-radius: 15px;
   display: flex;
   padding: 30px;
-  position: relative;
 }
 .display-side .display-text,
 p {
   color: #fff;
   font-weight: 200;
-  font-size: 18px;
+  font-size: 13px;
 }
 
 .display-side .display-text,
 h1 {
-  font-size: 70px;
+  font-size: 47px;
   font-weight: 700;
   color: #fff;
-  width: 120px;
 }
 
 .display-side .display-text,
 h1 span {
-  font-size: 70px;
+  font-size: 47px;
   font-weight: 700;
   color: #ffa233;
 }
 
 .display-side .display-img img {
-  height: 440px;
-  width: 380px;
-  position: absolute;
-  bottom: 0;
-  right: -18px;
+  height: 300px;
+  width: 370px;
 }
 
 .page-wrapper .form-side .sign-links {
