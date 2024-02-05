@@ -121,7 +121,6 @@ h1 {
   font-size: 70px;
   font-weight: 700;
   color: #fff;
-  width: 120px;
 }
 
 .display-side .display-text,
@@ -129,6 +128,12 @@ h1 span {
   font-size: 70px;
   font-weight: 700;
   color: #ffa233;
+  display: block;
+}
+@media only screen and (max-width: 751px) {
+  .display-side {
+    display: none !important;
+  }
 }
 
 .display-side .display-img img {
