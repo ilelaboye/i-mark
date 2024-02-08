@@ -76,18 +76,28 @@
 <style>
 .page-wrapper {
   background-color: #fff;
+  height: 90vh;
   width: 100%;
-  height: 100vh;
   text-align: center;
   margin: 20px;
 }
 .page-wrapper .row {
   height: 100%;
 }
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .page-wrapper .display-side .display-img {
     display: none;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .page-wrapper .display-side .display-img {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .page-wrapper .display-side {
+    display: none !important;
   }
 }
 
@@ -97,31 +107,41 @@
   border-radius: 15px;
   display: flex;
   padding: 30px;
+  position: relative;
 }
 .display-side .display-text,
 p {
   color: #fff;
   font-weight: 200;
-  font-size: 13px;
+  font-size: 18px;
 }
 
 .display-side .display-text,
 h1 {
-  font-size: 47px;
+  font-size: 70px;
   font-weight: 700;
   color: #fff;
 }
 
 .display-side .display-text,
 h1 span {
-  font-size: 47px;
+  font-size: 70px;
   font-weight: 700;
   color: #ffa233;
+  display: block;
+}
+@media only screen and (max-width: 751px) {
+  .display-side {
+    display: none !important;
+  }
 }
 
 .display-side .display-img img {
-  height: 300px;
-  width: 370px;
+  height: 440px;
+  width: 380px;
+  position: absolute;
+  bottom: 0;
+  right: -18px;
 }
 
 .page-wrapper .form-side .sign-links {
